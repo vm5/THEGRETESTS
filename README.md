@@ -1,130 +1,33 @@
-<!DOCTYPE html>
-<html style="background: silver;">
-<head>
-<title>THE GRE TESTS</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+# WELCOME TO GRE TESTING PORTAL
 
-  .image-box {
-    border: 2px solid black;
-    height: 200vh;
-    display: grid;
-    background-color: grey;
-    align-items: center;
-    justify-content: center;
-  }
+## About the GRE
 
-  .image-box img {
-    max-height: 1000%;
-    max-width: 1000%;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding-left: 20px;
-  }
+The Graduate Record Examinations is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada, as well as a few other countries. The GRE is owned and administered by Educational Testing Service.
 
-  h1 {
-    text-align: center;
-    font-family: Arial Black;
-    color: blue;
-  }
-  
-  h4 {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-family: Arial Black;
-    color: brown;
-  }
-  
-  h3 {
-    font-family: Arial Black;
-    color: yellow;
-  }
-  
-  h2 {
-    font-weight: bold;
-    font-family: Arial Black;
-    color: brown;
-  }
-  
-  h4 img {
-    margin-right: 20px;
-  }
-  
-  h5 {
-    font-family: Arial Black;
-    color: blue;
-    font-size: 19px;
-    margin-top: 20px;
-  }
- h6 {
-    font-family: Arial Black;
-    color: red;
-    font-size: 19px
-  }
- table {
-    margin: auto;
-  }
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="image-box">
-    <img src="gre.png" alt="GRE image">
-  </div>
-  <div class="content">
-    <h1>WELCOME TO GRE TESTING PORTAL</h1>
-    <hr />
-    <h2>About the GRE</h2>
-    <p>The Graduate Record Examinations is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada, as well as a few other countries. The GRE is owned and administered by Educational Testing Service.</p>
-    <h3>One Test. More Opportunities for Success.</h3>
-    <p>Whether you’re planning to go to graduate, business, or law school — or just exploring your options — you’re taking an important step toward your future. It’s a smart move to show schools your best with the GRE General Test.</p>
-    <p>We’re here to support you with resources that help you prepare for the test, connect with recruiters, build a competitive application, and more.</p>
-    <hr />
-    <h5>GRE mocks for odd semester: 2023-24 (Posted on 22-AUG-2023)</h5>
-    <p>ETS welcomes you to a new session. Every detail pertaining to mocks for the current odd semester shall be posted here. Candidates are informed to keep a close watch on the same without fail.The schedule will be out soon.<br /> <br />Thank you</p>
-    <hr />
-<h6>Important Dates #: GRE MOCKS OF ODD SEMESTER:2023-24</h6>
-<table bgcolor="black">
-  <tr bgcolor="grey">
-   <th>Event</th>
-   <th>Date</th>
- </tr>
-   <tr bgcolor="grey">
-     <td>Start of registration for mock-1</td>
-     <td>TBA</td>
-  </tr>
-   <tr bgcolor="grey">
-   <td>Last date to register for mock-1</td>
-   <td>TBA</td>
-</table> 
-<br />
-<hr />
-    <p>Important links</p>
-    <a href="C:\Users\Dell\OneDrive\Pictures\contact.html">Contact us</a><br />
-    <a href="C:\Users\Dell\OneDrive\Pictures\diversity.html">Diversity, inclusion, and belonging</a><br />
-    <a href="C:\Users\Dell\OneDrive\Pictures\disabilities.html">Disabilities</a><br />
-    <a href="C:\Users\Dell\OneDrive\Pictures\gre-law-school-admissions-faq.pdf">FAQs</a>
-    <hr />
-    <footer>
-      <p>&copy; GRE TESTING PORTAL</p>
-    </footer>
-  </div>
-</div>
-</body>
-</html>
+### One Test. More Opportunities for Success.
+
+Whether you’re planning to go to graduate, business, or law school — or just exploring your options — you’re taking an important step toward your future. It’s a smart move to show schools your best with the GRE General Test.
+
+We’re here to support you with resources that help you prepare for the test, connect with recruiters, build a competitive application, and more.
+
+### GRE mocks for odd semester: 2023-24 (Posted on 22-AUG-2023)
+
+ETS welcomes you to a new session. Every detail pertaining to mocks for the current odd semester shall be posted here. Candidates are informed to keep a close watch on the same without fail. The schedule will be out soon.
+
+#### Important Dates #: GRE MOCKS OF ODD SEMESTER:2023-24
+
+| Event                              | Date |
+| ---------------------------------- | ---- |
+| Start of registration for mock-1   | TBA  |
+| Last date to register for mock-1   | TBA  |
+
+**Important links:**
+
+- [Contact us](contact.html)
+- [Diversity, inclusion, and belonging](diversity.html)
+- [Disabilities](disabilities.html)
+- [FAQs](gre-law-school-admissions-faq.pdf)
+
+---
+
+&copy; GRE TESTING PORTAL
