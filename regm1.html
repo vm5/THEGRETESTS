@@ -1,194 +1,33 @@
-<!DOCTYPE html>
-<html style="background: silver;">
-<head>
-<title>THE GRE TESTS</title>
-<style>
-  /* Your existing styles here */
+# WELCOME TO GRE TESTING PORTAL
 
-  @keyframes slide {
-    0%, 100% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(100%);
-    }
-  }
+## About the GRE
 
-  .slide-in-out {
-    animation: slide 20s infinite;
-  }
+<!-- Your content up to the GRE mocks section -->
 
-  .registration-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+---
 
-  .registration-form {
-    border: 2px solid black;
-    background-color: #f9f9f9;
-    padding: 20px;
-  }
+## GRE mocks for odd semester: 2023-24 (Posted on 22-AUG-2023)
 
-  .registration-form label {
-    display: block;
-    margin-bottom: 5px;
-  }
+ETS welcomes you to a new session. Every detail pertaining to mocks for the current odd semester shall be posted here. Candidates are informed to keep a close watch on the same without fail. The schedule will be out soon.
 
-  .registration-form input {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+### Important Dates #: GRE MOCKS OF ODD SEMESTER:2023-24
 
-  .registration-form select {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+| Event                              | Date |
+| ---------------------------------- | ---- |
+| Start of registration for mock-1   | TBA  |
+| Last date to register for mock-1   | TBA  |
 
-  .registration-form button {
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .registration-image-box {
-    border: 2px solid black;
-    background-color: #f9f9f9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 200px; /* Adjust the height as needed */
-  }
+**Important links:**
 
-  .registration-image-box img {
-    max-height: 100%;
-    max-width: 100%;
-    object-fit: cover;
-  }
+- [Contact us](contact.html)
+- [Diversity, inclusion, and belonging](diversity.html)
+- [Disabilities](disabilities.html)
+- [FAQs](gre-law-school-admissions-faq.pdf)
 
-  .admit-card-container {
-    display: none;
-    border: 2px solid black;
-    background-color: #f9f9f9;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+---
 
-  .admit-card {
-    text-align: center;
-  }
+&copy; GRE TESTING PORTAL
 
-  .print-button {
-    margin-top: 10px;
-    display: flex;
-    justify-content: center;
-  }
-</style>
-</head>
-<body>
-<div class="container">
-  <div class="registration-image-box">
-    <img src="gre.png" alt="GRE image">
-  </div>
-  <div class="content">
-    <!-- Your existing content here -->
+---
 
-    <div class="registration-container">
-      <h2 class="slide-in-out">GRE MOCK-1 Registration</h2>
-      <div class="registration-form">
-        <form id="registrationForm">
-          <label for="fullName">Full Name:</label>
-          <input type="text" id="fullName" name="fullName" required>
-
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="birthdate">Date of Birth:</label>
-          <input type="date" id="birthdate" name="birthdate" required>
-
-          <label for="gender">Gender:</label>
-          <select id="gender" name="gender">
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
-
-          <button type="button" id="registerButton">Register</button>
-          <p id="applicationNumber"></p>
-        </form>
-      </div>
-    </div>
-
-   
- <div class="admit-card-container" id="admitCardContainer">
-  <div class="admit-card">
-    <h2>GRE MOCK-1 Admit Card</h2>
-    <p><strong>Application Number:</strong> <span id="admitApplicationNumber"></span></p>
-    <p><strong>Full Name:</strong> <span id="admitFullName"></span></p>
-    <p><strong>Email:</strong> <span id="admitEmail"></span></p>
-    <p><strong>Date of Birth:</strong> <span id="admitBirthdate"></span></p>
-    <p><strong>Gender:</strong> <span id="admitGender"></span></p>
-  </div>
-  <div class="print-button">
-    <button id="printAdmitCard">Print Admit Card</button>
-  </div>
-</div>
-
-<!-- ... Your existing JavaScript code ... -->
-<script>
-document.addEventListener("DOMContentLoaded", function() {
-  const registerButton = document.getElementById("registerButton");
-  const admitCardContainer = document.getElementById("admitCardContainer");
-  const admitApplicationNumber = document.getElementById("admitApplicationNumber");
-  const admitFullName = document.getElementById("admitFullName");
-  const admitEmail = document.getElementById("admitEmail");
-  const admitBirthdate = document.getElementById("admitBirthdate");
-  const admitGender = document.getElementById("admitGender");
-  const printAdmitCardButton = document.getElementById("printAdmitCard");
-
-  registerButton.addEventListener("click", function() {
-    const fullName = document.getElementById("fullName").value;
-    const email = document.getElementById("email").value;
-    const birthdate = document.getElementById("birthdate").value;
-    const gender = document.getElementById("gender").value;
-
-    // Generate a random application number (you can modify this logic as needed)
-    const applicationNumber = generateApplicationNumber();
-
-    admitFullName.textContent = fullName;
-    admitEmail.textContent = email;
-    admitBirthdate.textContent = birthdate;
-    admitGender.textContent = gender;
-    admitApplicationNumber.textContent = applicationNumber; // Display the application number
-
-    admitCardContainer.style.display = "block";
-  });
-
-  printAdmitCardButton.addEventListener("click", function() {
-    window.print();
-  });
-
-  // Function to generate a random application number
-  function generateApplicationNumber() {
-    const randomNumber = Math.floor(Math.random() * 1000000);
-    return `GRE-${randomNumber}`;
-  }
-});
-</script>
-
-
-  
+**Note:** JavaScript functionality is not displayed in this Markdown preview. Please refer to the original HTML code for the JavaScript implementation.
