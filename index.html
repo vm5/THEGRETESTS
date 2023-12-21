@@ -1,156 +1,205 @@
 <!DOCTYPE html>
-<html style="background: black">
+<html style="background: white">
+
 <head>
-<title>THE GRE TESTS</title>
-<style>
- .new-sticker {
-    position: relative;
-  }
-
-  .new-sticker::before {
-    content: "New";
-    display: inline-block;
-    background-color: red;
-    color: white;
-    padding: 2px 5px;
-    border-radius: 5px;
-    font-size: 14px;
-    font-weight: bold;
-    margin-right: 10px;
-    position: absolute;
-    top: -10px;
-    left: -5px;
-    animation: shine 1s infinite;
-  }
-
-  /* Shining animation */
-  @keyframes shine {
-    0%, 100% {
-      opacity: 0.6;
-      transform: scale(1);
+  <title>THE GRE TESTS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
     }
-    50% {
-      opacity: 1;
-      transform: scale(1.2);
+
+    h1 {
+      text-align: center;
+      font-family: Arial Black;
+      color: blue;
     }
-  }
-  @keyframes slide {
-  0%, 100% {
-    transform: translateX(-100%);
-  }
-  
-  50% {
-    transform: translateX(100%);
-  }
-}
 
-.slide-in-out {
-  animation: slide 70s infinite;
-}
- 
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    color: yellow; /* Change text color to yellow */
-  }
-  
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-  }
+    nav {
+      background-color: #333;
+      overflow: hidden;
+    }
 
-  .image-box {
-    border: 2px solid black;
-    height: 2000vh;
-    display: grid;
-    background-color: grey;
-    align-items: center;
-    justify-content: center;
-  }
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
 
-  .image-box img {
-    max-height: 4000%;
-    max-width: 4000%;
-    object-fit: cover;
-  }
-  
-  .content {
-    padding-left: 20px;
-  }
+    nav li {
+      display: inline-block;
+      margin-right: 20px;
+      vertical-align: top; /* Align from the top */
+    }
 
-  h1 {
-    text-align: center;
-    font-family: Arial Black;
-    color: blue;
-  }
-  
-  h4 {
-    display: flex;
-    align-items: center;
-    font-size: 24px;
-    font-family: Arial Black;
-    color: brown;
-  }
-  
-  h3 {
-    font-family: Arial Black;
-    color: red;
-  }
-  
-  h2 {
-    font-weight: bold;
-    font-family: Arial Black;
-    color: brown;
-  }
-  
-  h4 img {
-    margin-right: 20px;
-  }
-  
-  h5 {
-    font-family: Arial Black;
-    color: blue;
-    font-size: 19px;
-    margin-top: 20px;
-  }
- h6 {
-    font-family: Arial Black;
-    color: red;
-    font-size: 19px
-  }
- table {
-    margin: auto;
-  }
-  
-  /* Adding a scratched effect */
-  .scratched {
-    text-decoration: line-through;
-    color: gray;
-  }
-</style>
+    nav li a {
+      color: yellow;
+      text-decoration: none;
+      padding: 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    nav li a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    nav li a::after {
+      content: "\2192"; /* Unicode character for right arrow */
+      margin-left: 5px;
+      display: inline-block;
+    }
+
+    .new-sticker {
+      position: relative;
+    }
+
+    .new-sticker::before {
+      content: "New";
+      display: inline-block;
+      background-color: red;
+      color: white;
+      padding: 2px 5px;
+      border-radius: 5px;
+      font-size: 14px;
+      font-weight: bold;
+      margin-right: 10px;
+      position: absolute;
+      top: -10px;
+      left: -5px;
+      animation: shine 1s infinite;
+    }
+
+    /* Shining animation */
+    @keyframes shine {
+      0%, 100% {
+        opacity: 0.6;
+        transform: scale(1);
+      }
+      50% {
+        opacity: 1;
+        transform: scale(1.2);
+      }
+    }
+
+    @keyframes slide {
+      0%, 100% {
+        transform: translateX(-100%);
+      }
+
+      50% {
+        transform: translateX(100%);
+      }
+    }
+
+    .slide-in-out {
+      animation: slide 70s infinite;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .image-box {
+      border: 2px solid black;
+      height: 2000vh;
+      display: grid;
+      background-color: grey;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .image-box img {
+      max-height: 4000%;
+      max-width: 4000%;
+      object-fit: cover;
+    }
+
+    .content {
+      padding-left: 20px;
+    }
+
+    h4 {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
+      font-family: Arial Black;
+      color: brown;
+    }
+
+    h3 {
+      font-family: Arial Black;
+      color: red;
+    }
+
+    h2 {
+      font-weight: bold;
+      font-family: Arial Black;
+      color: brown;
+    }
+
+    h4 img {
+      margin-right: 20px;
+    }
+
+    h5 {
+      font-family: Arial Black;
+      color: blue;
+      font-size: 19px;
+      margin-top: 20px;
+    }
+
+    h6 {
+      font-family: Arial Black;
+      color: red;
+      font-size: 19px;
+    }
+
+    table {
+      margin: auto;
+    }
+
+    /* Adding a scratched effect */
+    .scratched {
+      text-decoration: line-through;
+      color: gray;
+    }
+  </style>
 </head>
-<body onload="alert('The Graduate Record Examination, or GRE, is an important step in the graduate school or business school application process. The GRE is a multiple-choice, computer-based, standardized exam that is often required for admission to graduate programs and graduate business programs (MBA) globally');">
-<div class="container">
-  <div class="image-box">
-    <img src="gre.png">
-  </div>
-  <div class="content">
-    <h1>WELCOME TO GRE TESTING PORTAL</h1> <br />
-    <h3>ATTENTION!!</h3>
-    <p class="slide-in-out">Dear Aspirant, you are advised not to believe in fake calls, emails and SMS. Please note that this is the only authentic website for admissions to various grad schools through GRE. Also, it has come to our attention that some unscrupulous individuals are making false promises to help candidates clear the exam. We strongly advise you to avoid falling prey to such deceitful practices. Those found guilty of engaging in such activities will face severe consequences, including criminal legal actions.</p>
-    <hr />
-    <h2>About the GRE</h2>
-    <p>The Graduate Record Examinations is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada, as well as a few other countries. The GRE is owned and administered by Educational Testing Service.</p>
-    <h3>One Test. More Opportunities for Success.</h3>
-    <p>Whether you are planning to go to graduate, business, or law school or just exploring your options, you are taking an important step toward your future. It is a smart move to show schools your best with the GRE General Test.</p>
-    <p>We are here to support you with resources that help you prepare for the test, connect with recruiters, build a competitive application and more.</p>
-    <hr /> 
-        <h5 class="new-sticker">Session-II mock-1 FINAL cutoff scores (Posted on 05-NOV-2023)</h5>
+
+<body>
+  <div class="container">
+    <div class="image-box">
+      <img src="gre.png" alt="GRE Image">
+    </div>
+    <div class="content">
+      <h1>WELCOME TO GRE TESTING PORTAL</h1> <br />
+      <nav>
+        <ul>
+          <li><a href="https://theegreonlineeteesstss.on.drv.tw/website.html">Home</a></li>
+          <li><a href="not-found">GRE Cutoffs</a></li>
+          <li><a href="https://theegreonlineeteesstss.on.drv.tw/partunis.html">List of participating institutes</a></li>
+          <li><a href="https://theegreonlineeteesstss.on.drv.tw/implinks.html">Important links</a></li>
+        </ul>
+      </nav>
+      <h3>ATTENTION!!</h3>
+      <p class="slide-in-out">Dear Aspirant, you are advised not to believe in fake calls, emails, and SMS. Please note that this is the only authentic website for admissions to various grad schools through GRE. Also, it has come to our attention that some unscrupulous individuals are making false promises to help candidates clear the exam. We strongly advise you to avoid falling prey to such deceitful practices. Those found guilty of engaging in such activities will face severe consequences, including criminal legal actions.</p>
+      <hr />
+      <h2>About the GRE</h2>
+      <p>The Graduate Record Examinations is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada, as well as a few other countries. The GRE is owned and administered by Educational Testing Service.</p>
+      <h3>One Test. More Opportunities for Success.</h3>
+      <p>Whether you are planning to go to graduate, business, or law school or just exploring your options, you are taking an important step toward your future. It is a smart move to show schools your best with the GRE General Test.</p>
+      <p>We are here to support you with resources that help you prepare for the test, connect with recruiters, build a competitive application and more.</p>
+<hr />
+<h5 class="new-sticker">Session-II mock-1 FINAL cutoff scores (Posted on 05-NOV-2023)</h5>
      <p>Dear Aspirant, </p>
      <p>The following scores are the final cutoff scores for admissions to the following universities enlisted in the table. There has been no data manipulation. These  are final and original.</p> 
      <table bgcolor="black">
@@ -1055,16 +1104,11 @@
   <p>Please note that these dates are tentative and might get changed if the situation warrants it. However, changes in dates (if any) shall be notified through the website well in advance. All information and communications regarding GRE mocks shall be made available to the candidates on this website. Candidates are advised to check this website regularly for all related information.</p>
 <br />
 <hr />
-    <h5>Important links</h5>
-    <a href="https://theegreonlineeteesstss.on.drv.tw/contact.html">Contact us</a><br />
-    <a href="https://theegreonlineeteesstss.on.drv.tw/diversity.html">Diversity, inclusion, and belonging</a><br />
-    <a href="https://theegreonlineeteesstss.on.drv.tw/disabilities.html">Disabilities</a><br />
-    <a href="C:\Users\Dell\OneDrive\Pictures\gre-law-school-admissions-faq.pdf">FAQs</a><br />
-    <hr />
-    <footer>
+     <footer>
       <h5>&copy; GRE TESTING PORTAL</h5>
     </footer>
+    </div>
   </div>
-</div>
 </body>
+
 </html>
