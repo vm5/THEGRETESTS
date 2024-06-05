@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html style="background: #fff5ee">
-
 <head>
   <title>THE GRE TESTS</title>
   <style>
@@ -8,42 +7,35 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-       display: flex;
-       flex-direction: column;
-       min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
-    h1 {
+    .silver {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 1000px;
+      height: 100px;
+      background-color: #fff;
+      border-radius: 8px; /* Add rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      margin: 20px auto;
       text-align: center;
-      font-family: Arial Black;
-      color: blue;
+      overflow: hidden; /* Hide overflowing content */
     }
 
-        .silver {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 1000px;
-            height: 100px;
-            background-color: #fff;
-            border-radius: 8px; /* Add rounded corners */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-            margin: 20px auto;
-            text-align: center;
-            overflow: hidden; /* Hide overflowing content */
-        }
-
-
-.nav1 {
-  display: flex;
-  justify-content: center; /* Center content horizontally */
-  align-items: center;
-  width: 98%;
-  height: 60px;
-  background-color: yellow; /* Change background color */
-  padding: 0 20px; /* Add padding */
-  margin: auto; /* Center horizontally */
-}
+    .nav1 {
+      display: flex;
+      justify-content: center; /* Center content horizontally */
+      align-items: center;
+      width: 98%;
+      height: 60px;
+      background-color: yellow; /* Change background color */
+      padding: 0 20px; /* Add padding */
+      margin: auto; /* Center horizontally */
+    }
 
     .nav1 a {
       color: white;
@@ -61,35 +53,20 @@
       font-size: 18px;
       margin: 0;
     }
-        .silver a {
-            display: flex;
-            align-items: center;
-            color: #333; /* Dark text color */
-            text-decoration: none;
-            transition: color 0.2s;
-            margin: 0 15px;
-            font-weight: bold;
-        }
 
-        .silver a i {
-            margin-right: 5px;
-        }
+    .silver a {
+      display: flex;
+      align-items: center;
+      color: #333; /* Dark text color */
+      text-decoration: none;
+      transition: color 0.2s;
+      margin: 0 15px;
+      font-weight: bold;
+    }
 
-        .silver a:hover {
-            color: #008cba; /* Highlight color on hover */
-        }
-       .silver a {
-            color: #333; /* Dark text color */
-            text-decoration: none;
-            transition: color 0.2s;
-            margin: 0 15px;
-            font-weight: bold;
-        }
-
-        .silver a:hover {
-            color: #008cba; /* Highlight color on hover */
-        }
-
+    .silver a:hover {
+      color: #008cba; /* Highlight color on hover */
+    }
 
     .new-sticker {
       position: relative;
@@ -111,6 +88,28 @@
       animation: shine 1s infinite;
     }
 
+    .box {
+      height: 170px;
+      width: 100%;
+      background-color: silver;
+      border-radius: 8px; /* Add rounded corners */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+      margin: 0 auto; /* Center horizontally */
+    }
+
+    .table-container {
+      margin-top: 20px;
+      margin-bottom: 20px; /* Added margin-bottom for spacing below tables */
+      border: 2px solid black; /* Added border for visual separation */
+      padding: 10px; /* Added padding for better spacing within the container */
+    }
+
+    p {
+      color: #ff6600;
+      font-weight: bold;
+      font-size: 45px;
+    }
+
     /* Shining animation */
     @keyframes shine {
       0%, 100% {
@@ -127,7 +126,6 @@
       0%, 100% {
         transform: translateX(-100%);
       }
-
       50% {
         transform: translateX(100%);
       }
@@ -137,16 +135,18 @@
       animation: slide 100s infinite;
     }
 
-    
     .content {
       padding-left: 20px;
     }
 
+    h1 {
+      text-align: center;
+      font-family: Arial Black;
+      color: blue;
+    }
 
-    h4 {
-      display: flex;
-      align-items: center;
-      font-size: 24px;
+    h2 {
+      font-weight: bold;
       font-family: Arial Black;
       color: brown;
     }
@@ -156,8 +156,10 @@
       color: red;
     }
 
-    h2 {
-      font-weight: bold;
+    h4 {
+      display: flex;
+      align-items: center;
+      font-size: 24px;
       font-family: Arial Black;
       color: brown;
     }
@@ -188,204 +190,147 @@
       text-decoration: line-through;
       color: gray;
     }
-    .box {
-    height: 170px;
-    width: 100%;
-    background-color: silver;
-    border-radius: 8px; /* Add rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
-    margin: 0 auto; /* Center horizontally */
-}
 
-  .table-container {
-      margin-top: 20px;
-      margin-bottom: 20px; /* Added margin-bottom for spacing below tables */
-      border: 2px solid black; /* Added border for visual separation */
-      padding: 10px; /* Added padding for better spacing within the container */
+    .image-box {
+      margin: 0 auto; /* Center horizontally */
+      width: 100%; /* Ensure the image spans the entire width */
+      max-height: 200px; /* Set a maximum height for the image box */
+      overflow: hidden; /* Hide any overflow content */
+      text-align: center; /* Center the image horizontally within its container */
     }
 
-   p {
-	color : #ff6600;
-	font-weight : bold;
-	}
-.image-box {
-    margin: 0 auto; /* Center horizontally */
-    width: 100%; /* Ensure the image spans the entire width */
-    max-height: 200px; /* Set a maximum height for the image box */
-    overflow: hidden; /* Hide any overflow content */
-    text-align: center; /* Center the image horizontally within its container */
-}
+    .image-box img {
+      width: 100%; /* Make the image fill the entire width of its container */
+      height: auto; /* Maintain aspect ratio */
+    }
 
-.image-box img {
-    width: 100%; /* Make the image fill the entire width of its container */
-    height: auto; /* Maintain aspect ratio */
-}
+    /* Flexbox container for side-by-side layout */
+    .flex-container {
+      display: flex;
+      justify-content: space-around; /* Space items evenly */
+      flex-wrap: wrap; /* Allow wrapping */
+    }
+
+    /* CSS for a box */
+    .box1, .box2 {
+      width: 300px;
+      height: 200px;
+      background-color: lightblue;
+      border: 2px solid #000; /* black border */
+      border-radius: 10px; /* rounded corners */
+      padding: 20px; /* space inside the box */
+      margin: 20px; /* space outside the box */
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* shadow effect */
+      display: flex; /* for flexbox layout if needed */
+      flex-direction: column;
+      justify-content: center; /* center items horizontally */
+      align-items: center; /* center items vertically */
+    }
+
+    /* Example of text styling inside the box */
+    .box1 p, .box2 p {
+      font-family: 'Georgia', serif; /* Elegant serif font */
+      font-size: 20px; /* Slightly larger font size */
+      line-height: 1.6; /* Increased line height for readability */
+      color: #333; /* Dark grey text color */
+      margin: 20px 0; /* Vertical spacing */
+      text-align: justify; /* Justified text alignment */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+    }
+
+    .styled-button {
+      background-color: #4CAF50; /* Green background */
+      border: none; /* Remove borders */
+      color: white; /* White text */
+      padding: 15px 32px; /* Some padding */
+      text-align: center; /* Centered text */
+      text-decoration: none; /* Remove underline */
+      display: inline-block; /* Get it to show inline-block */
+      font-size: 16px; /* Increase font size */
+      margin: 4px 2px; /* Some margin */
+      cursor: pointer; /* Pointer/hand icon */
+      border-radius: 8px; /* Rounded corners */
+      transition: background-color 0.3s; /* Smooth transition for hover effect */
+    }
+
+    .styled-button:hover {
+      background-color: #45a049; /* Darker green on hover */
+    }
   </style>
 </head>
-
 <body>
-  <div class="container">
+  <div class="table-container">
     <div class="image-box">
-    <img src="gre.png" alt="GRE Image"><h1>GRE (CONDUCTED BY ETS)</h1>
-  </div>
-      <div class="table-container">
-      <div class="silver">
-          <a href="https://vm5.github.io/THEGRETESTS/">Home</a>
-          <a href="https://theegreonlineeteesstss.on.drv.tw/cutoffs.html">GRE Cutoffs</a>
-          <a href="https://theegreonlineeteesstss.on.drv.tw/partunis.html">List of participating institutes</a>
-          <a href="https://theegreonlineeteesstss.on.drv.tw/privacy.html">Privacy policy</a>
-          <a href="https://theegreonlineeteesstss.on.drv.tw/implinks.html">Important links</a>
-       </div>
+      <img src="gre.png" alt="GRE Image">
+    </div>
+    <h1 class="heading">WELCOME TO GRE TESTING PORTAL (CONDUCTED BY ETS)</h1>
+    <div class="table-container">
+      <p>Select the country from which you would like to take the GRE</p>
+      <div class="flex-container">
+        <div class="box1">
+          <p>Take the GRE from non-Asian countries</p>
+        </div>
+        <div class="box2">
+          <p>Take the GRE from Asian countries</p>
+        </div>
       </div>
-    <div class="content">
-      <div class="nav1">
-      <h1>WELCOME TO GRE TESTING PORTAL</h1> 
-      </div>  
-      <h3>ATTENTION!!</h3>
-      <p class="slide-in-out">Dear Aspirant, you are advised not to believe in fake calls, emails, and SMS. Please note that this is the only authentic website for admissions to various grad schools through GRE. Also, it has come to our attention that some unscrupulous individuals are making false promises to help candidates clear the exam. We strongly advise you to avoid falling prey to such deceitful practices. Those found guilty of engaging in such activities will face severe consequences, including criminal legal actions.</p>
-      <hr />
-      <div class="table-container">
-      <h2>About the GRE</h2>
-      <p>The Graduate Record Examinations is a standardized test that is an admissions requirement for many graduate schools in the United States and Canada, as well as a few other countries. The GRE is owned and administered by Educational Testing Service.</p>
-      <h3>One Test. More Opportunities for Success.</h3>
-      <p>Whether you are planning to go to graduate, business, or law school or just exploring your options, you are taking an important step toward your future. It is a smart move to show schools your best with the GRE General Test.</p>
-      <p>We are here to support you with resources that help you prepare for the test, connect with recruiters, build a competitive application and more.</p>
-</div>
-<hr />
-</div>
-  <div class="table-container">
-  <div class="nav1">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
-  <path d="M0 0h24v24H0z" fill="none"/>
-  <path d="M14.94 9.24L13.5 4.5H10l-1.44 4.74a5.01 5.01 0 0 0-2.34 0L6 4.5H2.5l1.5 5-2.3 6.57c-.14.41-.05.86.24 1.16a.972.972 0 0 0 1.15.24l1.81-1.21c.21.14.44.25.69.34V21h2v-3h2v3h2v-3h2v3h2v-3.88c.25-.1.48-.21.7-.35l1.8 1.21a.996.996 0 0 0 1.16-.24c.29-.3.38-.75.24-1.16l-2.3-6.56 1.5-5H20l-1.44 4.74a5.01 5.01 0 0 0-2.34 0z"/>
-</svg> <br>
-  <h5>ANNOUNCEMENTS</h5> <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="50" height="50">
-  <path d="M0 0h24v24H0z" fill="none"/>
-  <path d="M14.94 9.24L13.5 4.5H10l-1.44 4.74a5.01 5.01 0 0 0-2.34 0L6 4.5H2.5l1.5 5-2.3 6.57c-.14.41-.05.86.24 1.16a.972.972 0 0 0 1.15.24l1.81-1.21c.21.14.44.25.69.34V21h2v-3h2v3h2v-3h2v3h2v-3.88c.25-.1.48-.21.7-.35l1.8 1.21a.996.996 0 0 0 1.16-.24c.29-.3.38-.75.24-1.16l-2.3-6.56 1.5-5H20l-1.44 4.74a5.01 5.01 0 0 0-2.34 0z"/>
-</svg> <br>
-  </div>
-  <h5 class="new-sticker"> Mock-1 results (Posted on 30-APR-2024)</h5>
-  <div class= "box"><br>
-  <p> Mock-1 results are now available. They can be viewed by clicking on the link given below. Please note, ETS is not responsible for any inadvertent errors caused. For further details/discrepencies, you can contact us via our official mail. A single mail addressing the entire issue instead of spams will be highly appreciated. </p>
-  <a href="https://theegreonlineeteesstss.on.drv.tw/scoredetails.html">Click here </a> to view your mock-1 results'
-  <p> Thank you</p>
-  </div>
-   <hr />
-  <h5>Start of registrations for GRE 2024-25 (Posted on 03-MAR-2024)</h5>
-  <div class= "box"><br>
-    <p>ETS invites applications to register for GRE-2024-25, the only online admission test for admissions to graduate, business, or law school in the USA, Cannada and adjoining countries.Please <a href="https://theegreonlineeteesstss.on.drv.tw/rform.html">Click Here</a> to apply for GRE-2024-25.</a></p>
-       <p>Last date to apply 11-APR-2024.</p>
-	<p>Thank you!</p>
-   </div>
     </div>
-    <hr />
-<div class="table-container">
-<h2>Important Dates #: GRE MOCKS OF EVEN SEMESTER:2024-25 (SESSION-III)</h2>
-  <div class="table-container">
-  <table bgcolor="blue">
-  <tr bgcolor="grey">
-   <th>EVENT</th>
-   <th>DATES</th>
- </tr>
- <tr bgcolor="red">
-   <th>Start of session-III registrations</th>
-   <th>March 3,2024 (Sunday)</th>
-   
- </tr>
-  <tr bgcolor="yellow">
-   <th>Last date to register for session-III</th>
-   <th>April 11,2024 (Thursday)</th>
- </tr>
-</tr>
-  <tr bgcolor="pink">
-   <th>Mock-1 AWA</th>
-   <th>April 20,2024 (Saturday)</th>
-   
- </tr>
-<tr bgcolor="pink">
-   <th>Mock-1 QR+VR</th>
-   <th>April 21,2024 (Sunday)</th>
-   
- </tr>
-<tr bgcolor="grey">
-   <th>Mock-1 result declaration</th>
-   <th>April 30, 2024(Tuesday)</th>
-  
- </tr>
-  <tr bgcolor="orange">
-   <th>Reopening of registration links for Mock-2(for unregistered candidates)</th>
-   <th>June 20,2024 (Thursday)</th>
-   
- </tr>
-  <tr bgcolor="orange">
-   <th>Closing of registration links for Mock-2</th>
-   <th>July 4,2024 (Thursday)</th>
-   
- </tr>
-<tr bgcolor="pink">
-   <th>Mock-2 AWA</th>
-   <th>July 6,2024 (Saturday)</th>
-   
- </tr>
-<tr bgcolor="pink">
-   <th>Mock-2 QR+VR</th>
-   <th>July 7, 2024 (Sunday)</th>
-   
- </tr>
-<tr bgcolor="grey">
-   <th>Mock-2 result declaration</th>
-   <th>July 8,2024 (Monday)</th>
+  </div>
+<footer>
+      <h5 class="heading2">&copy; GRE TESTING PORTAL</h5>
+   	</footer>
+  <script>
+    let button1 = document.createElement("button");
+    button1.innerText = "Register for GRE from non-Asian countries";
+    button1.className = "styled-button";
+    document.querySelector(".box1").appendChild(button1);
 
- </tr>
-  <tr bgcolor="orange">
-   <th>Reopening of registration links for Mock-3 (for unregistered candidates)</th>
-   <th>July 17,2024 (Wednesday)</th>
-   
- </tr>
-  <tr bgcolor="orange">
-   <th>Closing of registration links for Mock-3</th>
-   <th>Till the day of the test</th>
-   
- </tr>
-<tr bgcolor="pink">
-   <th>Mock-3 AWA</th>
-   <th>August 3,2024 (Saturday)</th>
-   
- </tr>
-<tr bgcolor="pink">
-   <th>Mock-3 QR+VR</th>
-   <th>August 4,2024 (Sunday)</th>
-   
- </tr>
-<tr bgcolor="grey">
-   <th>Mock-3 result declaration</th>
-   <th>August 5,2024 (Monday)</th>
-   
- </tr>
-  <tr bgcolor="silver">
-   <th>Start of session-III counselling (Iteration-1)</th>
-   <th>August 24, 2024 (Saturday)</th>
-  
- </tr>
-  <tr bgcolor="silver">
-   <th>End of session-III counselling (Iteration-2)</th>
-   <th>August 25, 2024 (Sunday)</th>
+    let button2 = document.createElement("button");
+    button2.innerText = "Register for GRE from Asian countries";
+    button2.className = "styled-button";
+    document.querySelector(".box2").appendChild(button2);
 
- </tr>
-</table> 
-  </div>
-  <h6>Please note that these dates are tentative and might get changed if the situation warrants it. However, changes in dates (if any) shall be notified through the website well in advance. All information and communications regarding GRE mocks shall be made available to the candidates on this website. Candidates are advised to check this website regularly for all related information.</h6>
-</div>
-<br />
-<hr />
-     <div class="nav1">
-     <footer>
-      <h5>&copy; GRE TESTING PORTAL</h5>
-   
-   </footer>
-    </div>
-    </div>
-  </div>
+    button1.addEventListener("click",() => {
+	window.location.href = "https://vm5.github.io/homegrena/";
+   });
+   button2.addEventListener("click",() => {
+	window.location.href = "https://vm5.github.io/homeasia/"
+   });
+
+  let colouroftitle = document.querySelector(".heading");
+  colouroftitle.style.backgroundColor = "orange";  ;  
+  let colouroftext1 = document.querySelector(".box1 p");
+  colouroftext1.style.backgroundColor = "yellow";  
+  let colouroftext2 = document.querySelector(".box2 p");
+  colouroftext2.style.backgroundColor = "yellow";  
+
+  let modebutton = document.createElement("button"); 
+  modebutton.innerText = "Change light/dark mode";
+  modebutton.className = "styled-button";
+  let currmode = "light";
+
+  modebutton.addEventListener("click",()=> {
+	if(currmode=="light"){
+		currmode = "dark";
+		document.querySelector("body").style.backgroundColor = "black";
+	}else{
+		currmode = "light";
+		document.querySelector("body").style.backgroundColor = "white";
+	}
+});
+document.body.appendChild(modebutton);
+document.querySelector(".heading2").style.textAlign = "center";
+document.querySelector(".heading2").style.backgroundColor = "pink";
+let version = document.createElement("p");
+version.innerText = "Version 2.1.0";
+version.classList.add("version");
+document.body.appendChild(version);
+document.querySelector(".version").style.fontSize = "30px";
+
+document.querySelector(".version").style.textAlign = "center";
+
+document.querySelector(".version").style.backgroundColor = "red";
+document.querySelector(".flex-container").style.backgroundColor = "purple";
+  </script>
 </body>
-
 </html>
