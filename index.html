@@ -256,6 +256,13 @@
     .styled-button:hover {
       background-color: #45a049; /* Darker green on hover */
     }
+ .clock {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 3em; /* Increase font size */
+      color: #333; /* Darker text color */
+      letter-spacing: 0.05em; /* Add a bit of spacing between characters */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
+    }
   </style>
 </head>
 <body>
@@ -264,6 +271,7 @@
       <img src="gre.png" alt="GRE Image">
     </div>
     <h1 class="heading">WELCOME TO GRE TESTING PORTAL (CONDUCTED BY ETS)</h1>
+    <div id="clock" class="clock">The current time is 00:00:00</div>
     <div class="table-container">
       <p>Select the country from which you would like to take the GRE</p>
       <div class="flex-container">
@@ -280,6 +288,23 @@
       <h5 class="heading2">&copy; GRE TESTING PORTAL</h5>
    	</footer>
   <script>
+    function gettime(){
+	const now = new Date();
+  	const hours = String(now.getHours()).padStart(2, '0');
+  	const minutes = String(now.getMinutes()).padStart(2, '0');
+  	const seconds = String(now.getSeconds()).padStart(2, '0');
+  
+  	return `${hours}:${minutes}:${seconds}`;
+}
+
+function updatetime(){
+let currenttime = document.querySelector("#clock");
+currenttime.textContent = `${gettime()}`;
+}
+updatetime();
+setInterval(updatetime, 1000);
+document.querySelector("#clock").style.textAlign = "right";
+
     let button1 = document.createElement("button");
     button1.innerText = "Register for GRE from non-Asian countries";
     button1.className = "styled-button";
