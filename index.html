@@ -204,6 +204,19 @@
       height: auto; /* Maintain aspect ratio */
     }
 
+    .i-box {
+  margin: 0 auto; /* Center horizontally */
+  width: 300px; /* Adjust width as needed */
+  max-height: 300px; /* Adjust max-height as needed */
+  overflow: hidden; /* Hide any overflow content */
+  text-align: center; /* Center the image horizontally within its container */
+}
+
+.i-box img {
+  width: 100%; /* Make the image fill the entire width of its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
     /* Flexbox container for side-by-side layout */
     .flex-container {
       display: flex;
@@ -226,6 +239,21 @@
       justify-content: center; /* center items horizontally */
       align-items: center; /* center items vertically */
     }
+.box3 {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  border: 2px solid #000; /* black border */
+  border-radius: 10px; /* rounded corners */
+  padding: 20px; /* space inside the box */
+  margin: 20px auto; /* Center horizontally */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* shadow effect */
+}
+
+
 
     /* Example of text styling inside the box */
     .box1 p, .box2 p {
@@ -284,10 +312,19 @@
       </div>
     </div>
   </div>
+   <div class="box3">
+   <h2>You can also access the website with the following QR code</h2>
+      <div class="i-box">
+      <img src = "qr.png" alt = "QR IMAGE">
+      </div>
+ </div>
 <footer>
       <h5 class="heading2">&copy; GRE TESTING PORTAL</h5>
    	</footer>
   <script>
+    let qrBox = document.querySelector(".i-box");
+    let qrText = document.createElement("p");
+    qrBox.appendChild(qrText);
     function gettime(){
 	const now = new Date();
   	const hours = String(now.getHours()).padStart(2, '0');
