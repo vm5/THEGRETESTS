@@ -585,8 +585,8 @@ textarea {
 
     .i-box {
   margin: 0 auto; /* Center horizontally */
-  width: 300px; /* Adjust width as needed */
-  max-height: 300px; /* Adjust max-height as needed */
+  width: 600px; /* Adjust width as needed */
+  max-height: 600px; /* Adjust max-height as needed */
   overflow: hidden; /* Hide any overflow content */
   text-align: center; /* Center the image horizontally within its container */
 }
@@ -670,6 +670,36 @@ textarea {
       letter-spacing: 0.05em; /* Add a bit of spacing between characters */
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle text shadow */
     }
+.menu {
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.menu-toggle {
+  color: #fff;
+  cursor: pointer;
+}
+
+.menu-content {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 10px 0;
+}
+
+.nav-link:hover {
+  background-color: #555;
+}
+
+
   </style>
 </head>
 <body>
@@ -685,16 +715,16 @@ textarea {
           <div class="left"></div>
 	  <img src="gre.png" alt= "GRE IMAGE">
         </div>
- 
-        <li class="nav-item">
-          <a class="nav-link" href="https://vm5.github.io/about/"><i class="far fa-copy"></i>About the GRE</a>
-          <a class="nav-link" href="https://vm5.github.io/contact/"><i class="fas fa-phone-alt"></i>Contact us</a>
-          <a class="nav-link" href="https://vm5.github.io/faq/" ><i class="fas fa-question-circle"></i>FAQs</a>
-        </li>
-
-      </ul>
+<nav class="menu">
+    <div class="menu-toggle" onclick="toggleMenu()">≡</div>
+    <div class="menu-content">
+      <a class="nav-link" href="https://vm5.github.io/about/"><i class="far fa-copy"></i>About the GRE</a>
+      <a class="nav-link" href="https://vm5.github.io/contact/"><i class="fas fa-phone-alt"></i>Contact us</a>
+      <a class="nav-link" href="https://vm5.github.io/faq/"><i class="fas fa-question-circle"></i>FAQs</a>
     </div>
   </nav>
+ 
+         
 </header>
 <main class="container"></main>
    <h1 class="heading">WELCOME TO GRE TESTING PORTAL (CONDUCTED BY ETS)</h1>
@@ -789,6 +819,10 @@ document.querySelector(".version").style.textAlign = "center";
 
 document.querySelector(".version").style.backgroundColor = "red";
 document.querySelector(".flex-container").style.backgroundColor = "purple";
+function toggleMenu() {
+      var menuContent = document.querySelector('.menu-content');
+      menuContent.classList.toggle('show');
+    }
   </script>
 </body>
 </html>
